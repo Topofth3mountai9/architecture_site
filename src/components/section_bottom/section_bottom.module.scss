@@ -1,0 +1,28 @@
+@use '../../global.scss' as global;
+
+.section_bottom_container {
+  align-self: end;
+  border-right: 1rem solid global.$primary_color;
+  //   padding-inline-end: 1.5rem;
+  padding: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  .top {
+    // font-size: global.$section_heading;
+    // font-size: global.$heading_1;
+    font-family: 'Alfa', cursive;
+    color: global.$light_accent_color;
+    text-transform: uppercase;
+    line-height: 1.2;
+  }
+  .bottom {
+    // font-size: global.$text_xl;
+    // letter-spacing: 0.2rem;
+  }
+
+  //   .bar {
+  //     width: 0.4rem;
+  //     height: 12rem;
+  //     background: global.$primary_color;
+  //   }
+}

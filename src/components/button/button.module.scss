@@ -1,0 +1,69 @@
+@use '../../global.scss' as global;
+.btn {
+  position: relative;
+  // font-size: global.$text_sm;
+  // font-size: global.$text_rg;
+  font-size: global.$text_tiny;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  // color: global.$color_grey_0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: global.$primary_color;
+    border-radius: 3rem;
+    //hiding the element
+    transform: scale(0);
+    transition: transform 0.3s;
+    //ensuring the element is always behind our button
+    z-index: -20;
+  }
+
+  // flex: 1 1 auto;
+  // width: 40%;
+  // @media all and (max-width: 670px) {
+  //   font-size: 1.4rem !important;
+  // }
+  // @media all and (max-width: 670px) {
+  //   font-size: 1.3rem !important;
+  //   flex: 1 0 auto;
+  // }
+  // @media all and (max-width: 450px) {
+  //   font-size: 1.2rem !important;
+  //   // flex: 1 0 auto;
+  // }
+}
+
+.transparent_btn {
+  &:hover {
+    background: global.$color_grey_100 !important;
+    color: global.$primary_color !important;
+    // border: 0.3rem solid global.$color_grey_100 !important;
+  }
+}
+
+.dark_btn {
+  &:hover {
+    background: global.$color_grey_0 !important;
+    color: global.$primary_color !important;
+    border: 0.2rem solid global.$color_grey_100 !important;
+  }
+}
+.light_btn,
+.other_btn {
+  &:hover {
+    color: global.$color_grey_0 !important;
+    background: global.$primary_color !important;
+  }
+}
+
+.diff_btn {
+  &:hover {
+    opacity: 0.8;
+  }
+}

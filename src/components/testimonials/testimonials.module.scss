@@ -1,0 +1,89 @@
+@use '../../global.scss' as global;
+
+.testimonials_container {
+  // min-height: 90vh;
+  padding-block-end: 3rem;
+  .section_heading {
+    // font-size: global.$heading_xl;
+    margin-block: 7rem;
+    text-transform: uppercase;
+  }
+
+  .all_testimonials {
+    justify-content: space-between;
+    gap: 12rem;
+    padding-block-start: 4.8rem;
+    // padding-inline: 10rem;
+    width: 80%;
+    margin-inline: auto;
+  }
+}
+
+.testimonial_container {
+  // padding-block: 2rem 2rem;
+  // padding-inline: 2rem 3rem;
+  padding-block: 5rem 3rem;
+  padding-inline: 3rem 3rem;
+  background: global.$some_other_grey;
+  border-radius: global.$border_radius_md;
+
+  .name {
+    font-size: global.$text_xl;
+  }
+
+  .position {
+    color: global.$light_grey;
+    margin-block: 1.5rem 2rem;
+    font-size: global.$normal_text;
+  }
+}
+
+.testimonial_img_wrapper {
+  width: 20rem;
+  position: absolute;
+  top: -5rem;
+  right: 4rem;
+  border-radius: global.$border_radius_sm;
+
+  .testimonial_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: global.$border_radius_sm;
+  }
+}
+
+.section_bottom {
+  margin-inline-end: 10rem;
+  margin-top: 3rem;
+}
+
+//responsive mode
+@media all and (width <= 1200px) {
+  .all_testimonials {
+    width: 90% !important;
+  }
+}
+@media all and (width <= 1100px) {
+  .all_testimonials {
+    width: 95% !important;
+  }
+}
+@media all and (width <= 900px) {
+  .all_testimonials {
+    width: 60% !important;
+    flex-flow: column wrap;
+    gap: 4rem;
+  }
+}
+@media all and (width <= 450px) {
+  .testimonial_img_wrapper {
+    top: -8rem;
+    right: 4rem;
+  }
+
+  .all_testimonials {
+    gap: 20rem !important;
+    width: 70% !important;
+  }
+}

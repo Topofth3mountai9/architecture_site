@@ -1,0 +1,145 @@
+@use '../../global.scss' as global;
+
+.about {
+  width: 100%;
+  // min-height: 70vh;
+}
+
+.about_container {
+  min-height: 100vh;
+  max-width: 80%;
+  margin: auto;
+  //   padding-block-start: 6rem;
+
+  .section_header {
+    // font-size: global.$section_heading;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 90%;
+  }
+}
+
+.section_paragraph {
+  margin-block: 3.2rem 2.3rem;
+  width: 80%;
+  // font-size: global.$heading_6;
+}
+
+.about_left {
+  gap: 8.4rem;
+}
+
+.img_wrapper {
+  position: relative;
+  //   height: 60%;
+  height: 35rem;
+  width: 50rem;
+  .about_img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.frame {
+  width: 50rem;
+  //   height: 60%;
+  height: 35rem;
+  border: 3rem solid global.$accent_color;
+  position: absolute;
+  top: 9%;
+  //   right: 5rem;
+  //   top: 15rem;
+  right: 7rem;
+}
+
+.section_bottom {
+  //   padding-right: 8rem;
+  //   margin-inline-end: 7rem;
+  margin-top: 1rem;
+}
+
+//responsive mode
+@media all and (width <= 1370px) {
+  .img_wrapper,
+  .frame {
+    width: 40rem;
+    height: 26rem;
+  }
+
+  .frame {
+    border: 2.4rem solid global.$accent_color;
+  }
+}
+
+@media all and (width <= 1200px) {
+  .about_container {
+    max-width: 90% !important;
+    min-height: 50vh;
+  }
+}
+
+@media all and (width <= 1100px) {
+  .img_wrapper,
+  .frame {
+    width: 40rem;
+    height: 26rem;
+  }
+
+  .frame {
+    border: 2.4rem solid global.$accent_color;
+  }
+}
+
+@media all and (width <= 900px) {
+  .about_container {
+    // max-width: 95% !important;
+  }
+
+  .about_right {
+    flex: 1.01;
+  }
+  .about_left {
+    flex: 1;
+  }
+  .frame {
+    left: 7rem;
+  }
+}
+
+@media all and (width <= 870px) {
+  .img_wrapper,
+  .frame {
+    width: 35rem;
+    height: 20rem;
+  }
+
+  .section_header {
+    width: 100% !important;
+  }
+
+  .section_paragraph {
+    width: 90% !important;
+  }
+}
+
+@media all and (width <= 600px) {
+  .frame,
+  .img_wrapper {
+    display: none;
+  }
+
+  .about_container {
+    justify-content: center;
+    flex-flow: column wrap;
+    // gap: 0 !important;
+  }
+
+  .about_right {
+    align-self: end;
+    flex: initial;
+  }
+
+  .about_left {
+    flex: initial;
+  }
+}

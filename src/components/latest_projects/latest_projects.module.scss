@@ -1,0 +1,96 @@
+@use '../../global.scss' as global;
+
+.latest_projects_container {
+  min-height: 100vh;
+  padding-block-end: 3rem;
+  .section_heading {
+    // font-size: global.$heading_xl;
+    margin-block: 7rem;
+  }
+}
+
+.all_projects {
+  flex-flow: row wrap;
+}
+
+.project_img_wrapper {
+  position: relative;
+  width: 35rem;
+  height: 50rem;
+
+  .project_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &:hover {
+    .card_content {
+      transform: scale(1);
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+    .card_content::before,
+    .card_content::after {
+      transform: scale(1);
+    }
+  }
+}
+
+.card_content {
+  //   background: rgba(0, 0, 0, 0.8);
+  color: global.$color_grey_0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding-left: 6rem;
+  align-items: flex-start;
+  //   position: relative;
+  //hiding the card content
+  transform: scale(0);
+  transition: background-color 0.6s;
+
+  &::before {
+    display: inline-block;
+    content: '';
+    height: 0.2rem;
+    width: 90%;
+    background: global.$primary_color;
+    position: absolute;
+    left: 0;
+    top: 2rem;
+    //hiding the element
+    transform: scale(0);
+    transform-origin: left;
+    transition: transform 0.8s;
+  }
+
+  &::after {
+    // display: inline-block;
+    content: '';
+    height: 90%;
+    width: 0.2rem;
+    transform: rotate(90deg);
+    background: global.$primary_color;
+    position: absolute;
+    top: 0;
+    left: 2rem;
+    //hiding the element
+    transform: scale(0);
+    transform-origin: top;
+    transition: transform 0.8s;
+  }
+
+  .card_heading {
+    // font-size: global.$normal_text;
+  }
+
+  .card_paragraph {
+    // font-size: global.$text_md;
+  }
+}
+
+.section_bottom {
+  margin-block-start: 3rem;
+}
