@@ -8,7 +8,12 @@ export default defineConfig({
     react(),
     // svgr()
   ],
-  server: {
-    host: '127.0.0.1',
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    emptyOutDir: true,
   },
+  // server: {
+  //   host: '127.0.0.1',
+  // },
 });
