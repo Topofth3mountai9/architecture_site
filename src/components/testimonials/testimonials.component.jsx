@@ -10,10 +10,12 @@ function Testimonial({ id, img, position, testimony, name }) {
       <div
         className={`${styles.testimonial_container} flex_items flex_column align_horizontal align_middl position_relative`}
       >
-        <h3 className={`${styles.name}`}>{name}</h3>
+        <h3 className={`${styles.name} text_medium`}>{name}</h3>
         <h4 className={`${styles.position}`}>{position}</h4>
         <FaQuoteLeft className={styles.quote_svg} />
-        <p className={`${styles.testimony}`}>{testimony}</p>
+        <p className={`${styles.testimony} text_small font-bold`}>
+          {testimony}
+        </p>
         <div className={`${styles.testimonial_img_wrapper}`}>
           <img
             src={img}

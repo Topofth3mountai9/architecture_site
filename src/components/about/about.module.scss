@@ -122,7 +122,8 @@
   }
 }
 
-@media all and (width <= 600px) {
+// @media all and (width <= 600px) {
+@media all and (width <= 768px) {
   .frame,
   .img_wrapper {
     display: none;

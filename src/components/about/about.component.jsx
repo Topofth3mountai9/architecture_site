@@ -10,7 +10,7 @@ function About() {
           className={`${styles.about_container} flex_items align_middle  g_6`}
         >
           <div className={`${styles.about_left}`}>
-            <h2 className={`${styles.section_header} heading_1`}>
+            <h2 className={`${styles.section_header} heading_one`}>
               We are creative building - design company
             </h2>
             <div className={`${styles.section_paragraph} text_small`}>

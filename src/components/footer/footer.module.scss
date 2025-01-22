@@ -51,4 +51,10 @@
     letter-spacing: 0.3rem;
     padding-block: 1.5rem;
   }
+
+  @media all and (width <= 600px) {
+    .logo_text {
+      display: none;
+    }
+  }
 }

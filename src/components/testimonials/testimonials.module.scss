@@ -28,13 +28,22 @@
   border-radius: global.$border_radius_md;
 
   .name {
-    font-size: global.$text_xl;
+    // font-size: global.$text_xl;
   }
 
   .position {
-    color: global.$light_grey;
+    // color: global.$light_grey;
+    color: global.$color_grey_400;
     margin-block: 1.5rem 2rem;
     font-size: global.$normal_text;
+  }
+
+  .testimony {
+    font-weight: 600;
+  }
+
+  .quote_svg {
+    color: global.$color_grey_300;
   }
 }
 
@@ -54,7 +63,7 @@
 }
 
 .section_bottom {
-  margin-inline-end: 10rem;
+  // margin-inline-end: 10rem;
   margin-top: 3rem;
 }
 
@@ -74,6 +83,11 @@
     width: 60% !important;
     flex-flow: column wrap;
     gap: 4rem;
+  }
+}
+@media all and (width <= 600px) {
+  .testimonial_container {
+    padding-block: 10rem 5rem;
   }
 }
 @media all and (width <= 450px) {

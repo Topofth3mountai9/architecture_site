@@ -20,7 +20,7 @@ function Footer() {
                 architecture
               </span>
             </div>
-            <div className={`${styles.creator} item_end`}>
+            <div className={`${styles.creator} item_end text_xs`}>
               <p>
                 &copy; All rights reserved. Made by{' '}
                 <span className="text_primary">Topofthemountain</span>

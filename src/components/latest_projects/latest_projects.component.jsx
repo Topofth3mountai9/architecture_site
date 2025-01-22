@@ -18,7 +18,7 @@ function Latest_projects() {
         <div
           className={`${styles.card_content} flex_items flex_column align_middl align_horizontal  `}
         >
-          <h5 className={`${styles.card_heading} mb_32 text_small`}>
+          <h5 className={`${styles.card_heading} mb_32 text_smal text_regular`}>
             Your Dream House is here
           </h5>
           <p className={`${styles.card_paragraph} text_tin`}>

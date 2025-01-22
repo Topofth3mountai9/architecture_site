@@ -17,7 +17,7 @@ function Hero() {
               <span className={`${styles.second_span}`}>House</span>
             </div>
             <div className="paragraph_and_cta_btn flex_items align_middle g_2">
-              <p className={`${styles.hero_paragraph} text_small`}>
+              <p className={`${styles.hero_paragraph} text_regular`}>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Adipisci, voluptates.
               </p>
